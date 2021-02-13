@@ -1,0 +1,37 @@
+{% extends base.html %}
+
+{% block main %}
+
+    <div class="profile">
+        <div class="proheader">
+            <img class ="photo" src="{{url_for('static', filename='lol.jpg')}}" alt="profile photo">
+                <h1>SHANDENE GRAY</h1>
+                <h2>SHAN SHAN</h2>
+                <h2>Kingston, Jamaica</h2>
+                <h2>{{date_joined}}</h2>
+        </div>
+        <div class="pbody">
+            <p>
+                I am a smart(somtimes) and talented young man who 
+                loves Web development  and framework being it. 
+                You can follow my instagram @shandenelifestyle .
+            </p>
+            <ul>
+                <li>
+                    <span class="num">7</span>
+                    <span>Posts</span>
+                </li>
+                <li>
+                    <span class="num">100</span>
+                    <span>Following</span>
+                </li>
+                <li>
+                    <span class="num">250</span>
+                    <span>Followers</span>
+                </li>
+            </ul>
+            <button class="btn">Follow</button>
+        </div>
+    </div>
+ 
+{% endblock %}
